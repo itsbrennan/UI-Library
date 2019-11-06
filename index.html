@@ -1,0 +1,126 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UI Library</title>
+    <style>
+      body {
+        /* 1rem = 10px */
+        font-size: 62.5%;
+      }
+      .container {
+        margin: 40px;
+        margin-top: 6rem;
+      }
+      .container p {
+        font-size: 1.6rem;
+      }
+      .content p {
+        font-size: 1.2rem;
+      }
+      button {
+        width: 200px;
+        background: #eee;
+        padding: 10px;
+        margin: 20px auto;
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>UI Library</h1>
+      <h2>Tooltips</h2>
+      <!-- tooltip -->
+      <p>
+        Lorem dolor sit amet consectetur adipisicing elit. Voluptate sequi odit
+        totam. Quod maiores saepe sequi.
+        <span class="tooltip" data-message="I'm a tooltip!!"
+          >Illum aspernatur</span
+        >
+        aut voluptatum, sequi quibusdam laudantium? Laborum asperiores
+        consequuntur eum corporis exercitationem debitis.
+      </p>
+      <h2>Dropdowns</h2>
+      <!-- dropdowns -->
+      <div class="dropdown">
+        <div class="trigger">Awesome T-shirt Designs</div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+            possimus, a natus totam sequi velit? Vel cupiditate hic incidunt
+            quam laboriosam tenetur nam, voluptate, necessitatibus ex porro,
+            soluta accusantium aspernatur.
+          </p>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="trigger">Cool Sticker Printing</div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis
+            possimus, a natus totam sequi velit? Vel cupiditate hic incidunt
+            quam laboriosam tenetur nam, voluptate, necessitatibus ex porro,
+            soluta accusantium aspernatur.
+          </p>
+        </div>
+      </div>
+      <h2>More information</h2>
+      <!-- tabs -->
+      <div class="tabs">
+        <ul>
+          <li class="trigger active" data-target="#about">About</li>
+          <li class="trigger" data-target="#delivery">Delivery info</li>
+          <li class="trigger" data-target="#returns">Returns info</li>
+          <li class="trigger" data-target="#support">Support</li>
+        </ul>
+        <div id="about" class="content active">
+          <h3>About</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            suscipit assumenda mollitia nostrum atque facilis neque, non
+            blanditiis deleniti, ab numquam similique eligendi soluta
+            necessitatibus, ex quibusdam illum eaque voluptate.
+          </p>
+        </div>
+        <div id="delivery" class="content">
+          <h3>Delivery</h3>
+          <p>
+            Non blanditiis deleniti, ab numquam similique eligendi soluta
+            necessitatibus, ex quibusdam illum eaque voluptate.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Minima suscipit assumenda
+            mollitia nostrum atque facilis neque.
+          </p>
+        </div>
+        <div id="returns" class="content">
+          <h3>Returns</h3>
+          <p>
+            Adipisicing elit. Minima suscipit assumenda mollitia nostrum atque
+            facilis neque, non blanditiis deleniti, lorem ipsum dolor sit amet
+            consectetur ab numquam similique eligendi soluta necessitatibus, ex
+            quibusdam illum eaque voluptate.
+          </p>
+        </div>
+        <div id="support" class="content">
+          <h3>Support</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            eveniet impedit assumenda ipsam reiciendis, obcaecati voluptatum?
+            Optio repudiandae quo natus soluta. A temporibus laudantium iure
+            illum natus dolorum eveniet accusantium.
+          </p>
+        </div>
+      </div>
+      <div>
+        <button class="snackbar-trigger">click me</button>
+      </div>
+    </div>
+
+    <script src="assets/bundle.js"></script>
+  </body>
+</html>
